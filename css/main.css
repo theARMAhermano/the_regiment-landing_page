@@ -109,7 +109,7 @@ a:visited {
 }
 
 .headline1 {
-    font-family: Manteka;
+    font-family: Manteka, Tahoma, sans-serif;
     font-size: 3em;
     filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
     -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
@@ -117,7 +117,7 @@ a:visited {
 }
 
 .headline2 {
-    font-family: Manteka, sans-serif;
+    font-family: Manteka, Tahoma, sans-serif;
     font-size: 1.9em;
     filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
     -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
