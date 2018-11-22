@@ -14,16 +14,15 @@
         <div class="pageBanner">
         </div>
         <div class="pageMain">
-            <div class="pageMainTop">
+            <div class="pageMainLogo">
                 <img src="img/the_regiment-logo-website.png" alt="The Regimental Skull" id="mainLogo">
             </div>
-            <div class="pageMainMiddle">
+            <div class="pageMainTop">
                 <p class="headline1">The Arma 3 TacSim Community</p>
             </div>
-            <div class="pageMainBottom">
+            <div class="pageMainMiddle">
                 <div class="sectionDiscord">
-                    <p class="headline2">Join us on discord!</p>
-                    <div class="svgIconWrapper">
+                    <div class="svgIconWrapper" id="svgIconDiscord"  onmouseover="hoverTextShow('hoverTextDiscord')" onmouseout="hoverTextHide('hoverTextDiscord')">
                         <a href="https://discord.gg/GrGfrg2" target="_blank">                 
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                                 viewBox="0 0 2184 2500" xml:space="preserve" class="svgIcon">
@@ -48,8 +47,7 @@
                     </div>
                 </div>
                 <div class="sectionSteam">
-                    <p class="headline2">View our mod set!</p>
-                    <div class="svgIconWrapper">
+                    <div class="svgIconWrapper" id="svgIconSteam" onmouseover="hoverTextShow('hoverTextSteam')" onmouseout="hoverTextHide('hoverTextSteam')">
                         <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1540774972" target="_blank">     
                             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                                 viewBox="-213.5 -352 1716 1652" xml:space="preserve" class="svgIcon">
@@ -90,6 +88,16 @@
                             </svg>
                         </a>
                     </div>
+                </div>
+            </div>
+            <div class="pageMainBottom">
+                <div id="hoverTextDiscord">
+                    <p class="headline2">Join us on Discord!</p>
+                    <p class="text1">We are using Discord as our primary community tool. The first step to join us is, to get on our discord server for a first little chat. Wait for our staff to sort you out.</p>
+                </div>
+                <div id="hoverTextSteam">
+                    <p class="headline2">Look at our modset!</p>
+                    <p class="text1">We are using a modded version of Arma 3 to make the gamplay more challenging and immersive. Look at our steam workshop mod list to see, what mods we are using.</p>
                 </div>
             </div>
         </div>

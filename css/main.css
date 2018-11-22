@@ -35,14 +35,13 @@ a:visited {
     padding: 0;
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    grid-template-rows: 10% 85% 5%; 
+    grid-template-rows: 5% 90% 5%; 
     grid-template-areas: 
       "gridHeader gridHeader gridHeader"
       ". gridMain ."
       "gridFooter gridFooter gridFooter";
 
 }
-
 
 .pageBanner {
     grid-area: gridHeader;
@@ -58,19 +57,27 @@ a:visited {
     grid-area: gridFooter;
 }
 
+.pageMainLogo {
+    width: 100%;
+}
+
 .pageMainTop {
     width: 100%;
 }
 
 .pageMainMiddle {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
+    min-height: 10em;
 }
 
 .pageMainBottom {
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
-    width: 100%;
+    max-width: 50em;
     min-height: 10em;
 }
 
@@ -110,7 +117,7 @@ a:visited {
 
 .headline1 {
     font-family: Manteka, Tahoma, sans-serif;
-    font-size: 3em;
+    font-size: 4em;
     filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
     -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
@@ -118,10 +125,16 @@ a:visited {
 
 .headline2 {
     font-family: Manteka, Tahoma, sans-serif;
-    font-size: 1.9em;
+    font-size: 2em;
     filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
     -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+.text1 {
+    font-family: Manteka, Tahoma, sans-serif;
+    font-size: 1.4em;
+    text-align: justify;
 }
 
 #backgroundVideo {
@@ -158,8 +171,17 @@ a:visited {
     margin-right: auto;
     max-width: 70vw;
     height: auto;
+    max-height: 50vh;
     transform-origin: center top;
     filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
     -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+  }
+
+  #hoverTextDiscord {
+      display: none;
+   }
+
+  #hoverTextSteam {
+    display: none;
   }
