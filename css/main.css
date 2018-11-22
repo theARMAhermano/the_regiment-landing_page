@@ -63,6 +63,8 @@ a:visited {
 
 .pageMainTop {
     width: 100%;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 .pageMainMiddle {
@@ -70,7 +72,8 @@ a:visited {
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    min-height: 10em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .pageMainBottom {
@@ -78,7 +81,6 @@ a:visited {
     flex-direction: row;
     justify-content: center;
     max-width: 50em;
-    min-height: 10em;
 }
 
 .svgIcon {
@@ -117,7 +119,7 @@ a:visited {
 
 .headline1 {
     font-family: Manteka, Tahoma, sans-serif;
-    font-size: 4em;
+    font-size: 3.9em;
     filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
     -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
@@ -133,8 +135,16 @@ a:visited {
 
 .text1 {
     font-family: Manteka, Tahoma, sans-serif;
-    font-size: 1.4em;
+    font-size: 1.5em;
     text-align: justify;
+}
+
+.fadedHr1 {
+    box-sizing: inherit;
+    border: 0;
+    height: 1px;
+    max-width: 60em;
+    background-image: linear-gradient(to left, rgba(199, 206, 209, 0), rgba(199, 206, 209, 0.75), rgba(199, 206, 209, 0));
 }
 
 #backgroundVideo {
@@ -173,6 +183,7 @@ a:visited {
     max-width: 70vw;
     height: auto;
     max-height: 50vh;
+    min-height: 300px;
     transform-origin: center top;
     filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
     -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
