@@ -1,38 +1,47 @@
 //Hover/Click Symbols Text Reveal
-/*function hoverTextShow (hoverID)
-{
-    document.getElementById(hoverID).style.display= "block";
-}
+var clickElementId;
+var clickElementIdBefore;
 
-function hoverTextHide (hoverID)
-{
-    document.getElementById(hoverID).style.display= "none";
-}
-*/
-
-var clickElementID = null;
-var clickElementIdBefore = null;
-var clearTextTimeoutStatus;
-
+/* WORK IN PROGRESS - Clear Text after timeout
 function clickTextChange (clickElementID) {
-    clearTextTimoutStatus = setTimeout (clearTextAfterTimeout, 16000);
-    if (clickElementID != null && clickElementIdBefore == null) {
-        document.getElementById(clickElementID).style.display= "block";
-        clickElementIdBefore = clickElementID;
-    }
-    if (clickElementID != null && clickElementIdBefore != null) {
-        document.getElementById(clickElementIdBefore).style.display= "none";
-        document.getElementById(clickElementID).style.display= "block";
-        clickElementIdBefore = clickElementID;
-    }
-    function clearTextAfterTimeout () {
+    //text timeout - doesnt work 100%, bugs out randomly
+    /*function clearTextAfterTimeout () {
+        clearTextTimeoutStatus = 0;
         document.getElementById(clickElementID).style.display= "none";
         clickElementIdBefore = null;
-        clearTextTimeoutStatus = null;
     }
-    return;
+    clearTextTimoutStatus = null;
+    clearTextTimoutStatus = setTimeout (clearTextAfterTimeout, 8000);
+    if (clickElementIdBefore != null) {
+        document.getElementById(clickElementIdBefore).style.display= "none";
+        clickElementIdBefore = null;
+        document.getElementById(clickElementID).style.display= "block";
+        clickElementIdBefore = clickElementID;
+    }
+    else {
+        document.getElementById(clickElementID).style.display= "block";
+        clickElementIdBefore = clickElementID;
+    }
  }
- 
+ */
+function clickTextChange (clickElementId) {
+    if (clickElementIdBefore != null) {
+        document.getElementById(clickElementIdBefore).style.display= "none";
+        document.getElementById(clickElementId).style.display= "block";
+        clickElementIdBefore = clickElementId;
+    }
+    else {
+        document.getElementById(clickElementId).style.display= "block";
+        clickElementIdBefore = clickElementId;
+    }
+}
+
+
+function clearText () {
+    setInterval(clearText, 3000);
+    document.getElementById(clickElementId).style.display= "none";
+}
+
  
   
 //The Regiment QUOTES - STUPID RANDOM CONSOL LOGGER
