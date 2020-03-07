@@ -45,7 +45,7 @@ function clearText () {
  
   
 //The Regiment QUOTES - STUPID RANDOM CONSOL LOGGER
-var quoteArray = ["PLACE QUOTES AT END IN THIS ARRAY", "'Fukk Siss!' - Nazman", "'Cool for cats!' - Everest78", "'So you are all experts then, right?' - Tiger", "'Sir, can I pack additional ammo....!' - Dayton aka IRON HEART", "'First of first...!' - Nazman", "'We are not trained for confusion!' - hermano", "'I don't like alpha' - Bornasm", "*unintelligible grumble* - Keller", "'Hey, can you hear the banjo music playing? Because you look like a cousin!' - GorillaRoyale", "'How ever much fucked this game is, its still a thousand times better, than any other shooter game.' - Dirty"];
+var quoteArray = ["PLACE QUOTES AT END IN THIS ARRAY", "'Fukk Siss!' - Nazman", "'Cool for cats!' - Everest78", "'So you are all experts then, right?' - Tiger", "'Sir, can I pack additional ammo....!' - Dayton aka IRON HEART", "'First of first...!' - Nazman", "'We are not trained for confusion!' - hermano", "'I don't like alpha' - Bornasm", "*unintelligible grumble* - Keller", "'Hey, can you hear the banjo music playing? Because you look like a cousin!' - GorillaRoyale", "'How ever much fucked this game is, its still a thousand times better, than any other shooter game.' - Dirty", "'General rule of thumb: if you don't need to be at the rear of a helicopter, you really shouldn't be there!' - Mirrow"];
 var quoteArrayRandom = 1;
 var quoteArrayEnd = quoteArray.length;
 setInterval(logRandomQuote, 3000);
