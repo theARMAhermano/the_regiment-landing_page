@@ -141,7 +141,7 @@ a:visited {
     order: 1;
     width: 100%;
     padding-top: 3em;
-    padding-bottom: 3em;
+    padding-bottom: 0em;
 }
 
 .pageMainMiddle {
